@@ -59,7 +59,7 @@ export async function getGlobalElements(
   })
 
   return {
-    ...(await serverSideTranslations(context.locale, ["common"])),
+    ...(await serverSideTranslations('en', ["common"])),
     menus: {
       main: mainMenu.items,
       footer: footerMenu.items,
